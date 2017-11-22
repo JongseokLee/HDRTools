@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>158F79B0-872D-46A6-A7A5-977A951CDC88</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HDRTools</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8B795F35E090C8DE83306CD2B73DF0D2F0385E4</key>
+		<string>ssh://gitlab.sd.apple.com/atourapis/hdrtools.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xcode/HDRTools.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8B795F35E090C8DE83306CD2B73DF0D2F0385E4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://gitlab.sd.apple.com/atourapis/hdrtools.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8B795F35E090C8DE83306CD2B73DF0D2F0385E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8B795F35E090C8DE83306CD2B73DF0D2F0385E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HDRTools</string>
+		</dict>
+	</array>
+</dict>
+</plist>

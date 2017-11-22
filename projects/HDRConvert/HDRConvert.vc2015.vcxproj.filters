@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\HDRConvert.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HDRConvertEXR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HDRConvertTIFF.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HDRConvertYUV.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProjectParameters.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\HDRConvert.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\HDRConvertEXR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\HDRConvertTIFF.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\HDRConvertYUV.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ProjectParameters.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0c84d2c9-d00b-4633-aff0-3ae0ac37a527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{87c6a9e9-f9b0-4f35-8123-27c0d17e82b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

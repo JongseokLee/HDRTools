@@ -1,0 +1,9 @@
+.DS_Store
+
+x64
+Debug
+Release
+Sequences
+HDR_Sequences
+outputYUV
+projects/x64

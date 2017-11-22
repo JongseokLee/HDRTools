@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7DA2A69D-DF93-4CBF-B821-64A72B8B213A}</ProjectGuid>
+    <RootNamespace>common</RootNamespace>
+    <ProjectName>Common</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;JM_PSNR;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;JM_PSNR;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;JM_PSNR;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FloatingPointExceptions>
+      </FloatingPointExceptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;JM_PSNR;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FloatingPointExceptions>
+      </FloatingPointExceptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AddNoise.cpp" />
+    <ClCompile Include="src\AddNoiseNormal.cpp" />
+    <ClCompile Include="src\AddNoiseNull.cpp" />
+    <ClCompile Include="src\AnalyzeGamut.cpp" />
+    <ClCompile Include="src\BufToImg.cpp" />
+    <ClCompile Include="src\BufToImgBasic.cpp" />
+    <ClCompile Include="src\BufToImgEndian.cpp" />
+    <ClCompile Include="src\ColorTransform.cpp" />
+    <ClCompile Include="src\ColorTransformCL.cpp" />
+    <ClCompile Include="src\ColorTransformClosedLoop.cpp" />
+    <ClCompile Include="src\ColorTransformClosedLoopCr.cpp" />
+    <ClCompile Include="src\ColorTransformClosedLoopFRGB.cpp" />
+    <ClCompile Include="src\ColorTransformClosedLoopRGB.cpp" />
+    <ClCompile Include="src\ColorTransformClosedLoopY.cpp" />
+    <ClCompile Include="src\ColorTransformFVDO.cpp" />
+    <ClCompile Include="src\ColorTransformGeneric.cpp" />
+    <ClCompile Include="src\ColorTransformNull.cpp" />
+    <ClCompile Include="src\ColorTransformRGBAdjust.cpp" />
+    <ClCompile Include="src\ColorTransformXYZ2YUpVp.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjust.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjust2ndOrder.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjustAlt.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjustFast.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjustFull.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjustHLG.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjustLFast.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjustTele.cpp" />
+    <ClCompile Include="src\ColorTransformYAdjustXYZ.cpp" />
+    <ClCompile Include="src\ColorTransformYInter.cpp" />
+    <ClCompile Include="src\ColorTransformYLin.cpp" />
+    <ClCompile Include="src\ColorTransformYLuma.cpp" />
+    <ClCompile Include="src\ColorTransformYMul.cpp" />
+    <ClCompile Include="src\ColorTransformYPlus.cpp" />
+    <ClCompile Include="src\ColorTransformYSumLin.cpp" />
+    <ClCompile Include="src\Conv420to422Generic.cpp" />
+    <ClCompile Include="src\Conv420to444Adaptive.cpp" />
+    <ClCompile Include="src\Conv420to444CrBounds.cpp" />
+    <ClCompile Include="src\Conv420to444Generic.cpp" />
+    <ClCompile Include="src\Conv420to444NN.cpp" />
+    <ClCompile Include="src\Conv422to420Generic.cpp" />
+    <ClCompile Include="src\Conv422to444Generic.cpp" />
+    <ClCompile Include="src\Conv422to444NN.cpp" />
+    <ClCompile Include="src\Conv444to420Adaptive.cpp" />
+    <ClCompile Include="src\Conv444to420BI.cpp" />
+    <ClCompile Include="src\Conv444to420CrBounds.cpp" />
+    <ClCompile Include="src\Conv444to420CrEdge.cpp" />
+    <ClCompile Include="src\Conv444to420CrFBounds.cpp" />
+    <ClCompile Include="src\Conv444to420Generic.cpp" />
+    <ClCompile Include="src\Conv444to420NN.cpp" />
+    <ClCompile Include="src\Conv444to422Generic.cpp" />
+    <ClCompile Include="src\Conv444to422GenericOld.cpp" />
+    <ClCompile Include="src\Conv444to422NN.cpp" />
+    <ClCompile Include="src\Convert.cpp" />
+    <ClCompile Include="src\ConvertBitDepth.cpp" />
+    <ClCompile Include="src\ConvertColorFormat.cpp" />
+    <ClCompile Include="src\ConvertColorFormatNull.cpp" />
+    <ClCompile Include="src\ConvertNull.cpp" />
+    <ClCompile Include="src\ConvFixedToFloat.cpp" />
+    <ClCompile Include="src\ConvFloatToFixed.cpp" />
+    <ClCompile Include="src\DisplayGammaAdjust.cpp" />
+    <ClCompile Include="src\DisplayGammaAdjustHLG.cpp" />
+    <ClCompile Include="src\DisplayGammaAdjustNull.cpp" />
+    <ClCompile Include="src\DistortionMetric.cpp" />
+    <ClCompile Include="src\DistortionMetricBlockAct.cpp" />
+    <ClCompile Include="src\DistortionMetricBlockinessJ341.cpp" />
+    <ClCompile Include="src\DistortionMetricDeltaE.cpp" />
+    <ClCompile Include="src\DistortionMetricmPSNR.cpp" />
+    <ClCompile Include="src\DistortionMetricmPSNRfast.cpp" />
+    <ClCompile Include="src\DistortionMetricMSSSIM.cpp" />
+    <ClCompile Include="src\DistortionMetricPSNR.cpp" />
+    <ClCompile Include="src\DistortionMetricRegionPSNR.cpp" />
+    <ClCompile Include="src\DistortionMetricRegionTFPSNR.cpp" />
+    <ClCompile Include="src\DistortionMetricSigmaCompare.cpp" />
+    <ClCompile Include="src\DistortionMetricSSIM.cpp" />
+    <ClCompile Include="src\DistortionMetricTFMSSSIM.cpp" />
+    <ClCompile Include="src\DistortionMetricTFPSNR.cpp" />
+    <ClCompile Include="src\DistortionMetricTFSSIM.cpp" />
+    <ClCompile Include="src\DistortionMetricVIF.cpp" />
+    <ClCompile Include="src\DistortionMetricVQM.cpp" />
+    <ClCompile Include="src\DistortionTransferFunction.cpp" />
+    <ClCompile Include="src\Eigenvalue.cpp" />
+    <ClCompile Include="src\FFT.cpp" />
+    <ClCompile Include="src\Filter1D.cpp" />
+    <ClCompile Include="src\Frame.cpp" />
+    <ClCompile Include="src\FrameFilter.cpp" />
+    <ClCompile Include="src\FrameFilter2DSep.cpp" />
+    <ClCompile Include="src\FrameFilterDeblock.cpp" />
+    <ClCompile Include="src\FrameFilterNLMeans.cpp" />
+    <ClCompile Include="src\FrameFilterNull.cpp" />
+    <ClCompile Include="src\FrameFilterWiener2D.cpp" />
+    <ClCompile Include="src\FrameFilterWiener2DDark.cpp" />
+    <ClCompile Include="src\FrameScale.cpp" />
+    <ClCompile Include="src\FrameScaleBiCubic.cpp" />
+    <ClCompile Include="src\FrameScaleBilinear.cpp" />
+    <ClCompile Include="src\FrameScaleHalf.cpp" />
+    <ClCompile Include="src\FrameScaleLanczos.cpp" />
+    <ClCompile Include="src\FrameScaleNN.cpp" />
+    <ClCompile Include="src\FrameScaleNull.cpp" />
+    <ClCompile Include="src\ImgToBuf.cpp" />
+    <ClCompile Include="src\ImgToBufBasic.cpp" />
+    <ClCompile Include="src\ImgToBufEndian.cpp" />
+    <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\InputDPX.cpp" />
+    <ClCompile Include="src\InputEXR.cpp" />
+    <ClCompile Include="src\InputTIFF.cpp" />
+    <ClCompile Include="src\InputY4M.cpp" />
+    <ClCompile Include="src\InputYUV.cpp" />
+    <ClCompile Include="src\IOFunctions.cpp" />
+    <ClCompile Include="src\LookUpTable.cpp" />
+    <ClCompile Include="src\Output.cpp" />
+    <ClCompile Include="src\OutputAVI.cpp" />
+    <ClCompile Include="src\OutputEXR.cpp" />
+    <ClCompile Include="src\OutputTIFF.cpp" />
+    <ClCompile Include="src\OutputY4M.cpp" />
+    <ClCompile Include="src\OutputYUV.cpp" />
+    <ClCompile Include="src\Parameters.cpp" />
+    <ClCompile Include="src\ResizeBiCubic.cpp" />
+    <ClCompile Include="src\ScaleFilter.cpp" />
+    <ClCompile Include="src\ToneMapping.cpp" />
+    <ClCompile Include="src\ToneMappingBT2390.cpp" />
+    <ClCompile Include="src\ToneMappingBT2390IPT.cpp" />
+    <ClCompile Include="src\ToneMappingCIE1931.cpp" />
+    <ClCompile Include="src\ToneMappingCIE1976.cpp" />
+    <ClCompile Include="src\ToneMappingNull.cpp" />
+    <ClCompile Include="src\ToneMappingRoll.cpp" />
+    <ClCompile Include="src\TransferFunction.cpp" />
+    <ClCompile Include="src\TransferFunctionAMPQ.cpp" />
+    <ClCompile Include="src\TransferFunctionAPH.cpp" />
+    <ClCompile Include="src\TransferFunctionAPQ.cpp" />
+    <ClCompile Include="src\TransferFunctionAPQScaled.cpp" />
+    <ClCompile Include="src\TransferFunctionAsRGB.cpp" />
+    <ClCompile Include="src\TransferFunctionBiasedMPQ.cpp" />
+    <ClCompile Include="src\TransferFunctionBT709.cpp" />
+    <ClCompile Include="src\TransferFunctionCineonLog.cpp" />
+    <ClCompile Include="src\TransferFunctionDPXLog.cpp" />
+    <ClCompile Include="src\TransferFunctionHGold.cpp" />
+    <ClCompile Include="src\TransferFunctionHLG.cpp" />
+    <ClCompile Include="src\TransferFunctionHPQ.cpp" />
+    <ClCompile Include="src\TransferFunctionHPQ2.cpp" />
+    <ClCompile Include="src\TransferFunctionMPQ.cpp" />
+    <ClCompile Include="src\TransferFunctionNormalize.cpp" />
+    <ClCompile Include="src\TransferFunctionNull.cpp" />
+    <ClCompile Include="src\TransferFunctionOHG.cpp" />
+    <ClCompile Include="src\TransferFunctionPH.cpp" />
+    <ClCompile Include="src\TransferFunctionPower.cpp" />
+    <ClCompile Include="src\TransferFunctionPQ.cpp" />
+    <ClCompile Include="src\TransferFunctionPQLB.cpp" />
+    <ClCompile Include="src\TransferFunctionSRGB.cpp" />
+    <ClCompile Include="src\TransferFunctionST240.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\AddNoise.H" />
+    <ClInclude Include="inc\AddNoiseNormal.H" />
+    <ClInclude Include="inc\AddNoiseNull.H" />
+    <ClInclude Include="inc\AnalyzeGamut.H" />
+    <ClInclude Include="inc\AVILib.H" />
+    <ClInclude Include="inc\BufToImg.H" />
+    <ClInclude Include="inc\BufToImgBasic.H" />
+    <ClInclude Include="inc\BufToImgEndian.H" />
+    <ClInclude Include="inc\ColorSpaceMatrix.H" />
+    <ClInclude Include="inc\ColorTransform.H" />
+    <ClInclude Include="inc\ColorTransformCL.H" />
+    <ClInclude Include="inc\ColorTransformClosedLoop.H" />
+    <ClInclude Include="inc\ColorTransformClosedLoopCr.H" />
+    <ClInclude Include="inc\ColorTransformClosedLoopFRGB.H" />
+    <ClInclude Include="inc\ColorTransformClosedLoopRGB.H" />
+    <ClInclude Include="inc\ColorTransformClosedLoopY.H" />
+    <ClInclude Include="inc\ColorTransformFVDO.H" />
+    <ClInclude Include="inc\ColorTransformGeneric.H" />
+    <ClInclude Include="inc\ColorTransformNull.H" />
+    <ClInclude Include="inc\ColorTransformRGBAdjust.H" />
+    <ClInclude Include="inc\ColorTransformXYZ2YUpVp.H" />
+    <ClInclude Include="inc\ColorTransformYAdjust.H" />
+    <ClInclude Include="inc\ColorTransformYAdjust2ndOrder.H" />
+    <ClInclude Include="inc\ColorTransformYAdjustAlt.H" />
+    <ClInclude Include="inc\ColorTransformYAdjustFast.H" />
+    <ClInclude Include="inc\ColorTransformYAdjustFull.H" />
+    <ClInclude Include="inc\ColorTransformYAdjustHLG.H" />
+    <ClInclude Include="inc\ColorTransformYAdjustLFast.H" />
+    <ClInclude Include="inc\ColorTransformYAdjustTele.H" />
+    <ClInclude Include="inc\ColorTransformYAdjustXYZ.H" />
+    <ClInclude Include="inc\ColorTransformYInter.H" />
+    <ClInclude Include="inc\ColorTransformYLin.H" />
+    <ClInclude Include="inc\ColorTransformYLuma.H" />
+    <ClInclude Include="inc\ColorTransformYMultiply.H" />
+    <ClInclude Include="inc\ColorTransformYPlus.H" />
+    <ClInclude Include="inc\ColorTransformYSumLin.H" />
+    <ClInclude Include="inc\Conv420to422Generic.H" />
+    <ClInclude Include="inc\Conv420to444Adaptive.H" />
+    <ClInclude Include="inc\Conv420to444CrBounds.H" />
+    <ClInclude Include="inc\Conv420to444Generic.H" />
+    <ClInclude Include="inc\Conv420to444NN.H" />
+    <ClInclude Include="inc\Conv422to420Generic.H" />
+    <ClInclude Include="inc\Conv422to444Generic.H" />
+    <ClInclude Include="inc\Conv422to444NN.H" />
+    <ClInclude Include="inc\Conv444to420Adaptive.H" />
+    <ClInclude Include="inc\Conv444to420BI.H" />
+    <ClInclude Include="inc\Conv444to420CrBounds.H" />
+    <ClInclude Include="inc\Conv444to420CrEdge.H" />
+    <ClInclude Include="inc\Conv444to420CrFBounds.H" />
+    <ClInclude Include="inc\Conv444to420Generic.H" />
+    <ClInclude Include="inc\Conv444to420NN.H" />
+    <ClInclude Include="inc\Conv444to422Generic.H" />
+    <ClInclude Include="inc\Conv444to422GenericOld.H" />
+    <ClInclude Include="inc\Conv444to422NN.H" />
+    <ClInclude Include="inc\Convert.H" />
+    <ClInclude Include="inc\ConvertBitDepth.H" />
+    <ClInclude Include="inc\ConvertColorFormat.H" />
+    <ClInclude Include="inc\ConvertColorFormatNull.H" />
+    <ClInclude Include="inc\ConvertNull.H" />
+    <ClInclude Include="inc\ConvFixedToFloat.H" />
+    <ClInclude Include="inc\ConvFloatToFixed.H" />
+    <ClInclude Include="inc\Defines.H" />
+    <ClInclude Include="inc\DisplayGammaAdjust.H" />
+    <ClInclude Include="inc\DisplayGammaAdjustHLG.H" />
+    <ClInclude Include="inc\DisplayGammaAdjustNull.H" />
+    <ClInclude Include="inc\DistortionMetric.H" />
+    <ClInclude Include="inc\DistortionMetricBlockAct.H" />
+    <ClInclude Include="inc\DistortionMetricBlockinessJ341.H" />
+    <ClInclude Include="inc\DistortionMetricDeltaE.H" />
+    <ClInclude Include="inc\DistortionMetricmPSNR.H" />
+    <ClInclude Include="inc\DistortionMetricmPSNRfast.H" />
+    <ClInclude Include="inc\DistortionMetricMSSSIM.H" />
+    <ClInclude Include="inc\DistortionMetricPSNR.H" />
+    <ClInclude Include="inc\DistortionMetricRegionPSNR.H" />
+    <ClInclude Include="inc\DistortionMetricRegionTFPSNR.H" />
+    <ClInclude Include="inc\DistortionMetricSigmaCompare.H" />
+    <ClInclude Include="inc\DistortionMetricSSIM.H" />
+    <ClInclude Include="inc\DistortionMetricTFMSSSIM.H" />
+    <ClInclude Include="inc\DistortionMetricTFPSNR.H" />
+    <ClInclude Include="inc\DistortionMetricTFSSIM.H" />
+    <ClInclude Include="inc\DistortionMetricVIF.H" />
+    <ClInclude Include="inc\DistortionMetricVQM.H" />
+    <ClInclude Include="inc\DistortionTransferFunction.H" />
+    <ClInclude Include="inc\Eigenvalue.H" />
+    <ClInclude Include="inc\FFT.H" />
+    <ClInclude Include="inc\Filter1D.H" />
+    <ClInclude Include="inc\Frame.H" />
+    <ClInclude Include="inc\FrameFilter.H" />
+    <ClInclude Include="inc\FrameFilter2DSep.H" />
+    <ClInclude Include="inc\FrameFilterDeblock.H" />
+    <ClInclude Include="inc\FrameFilterNLMeans.H" />
+    <ClInclude Include="inc\FrameFilterNull.H" />
+    <ClInclude Include="inc\FrameFilterWiener2D.H" />
+    <ClInclude Include="inc\FrameFilterWiener2DDark.H" />
+    <ClInclude Include="inc\FrameFormat.H" />
+    <ClInclude Include="inc\FrameScale.H" />
+    <ClInclude Include="inc\FrameScaleBiCubic.H" />
+    <ClInclude Include="inc\FrameScaleBilinear.H" />
+    <ClInclude Include="inc\FrameScaleHalf.H" />
+    <ClInclude Include="inc\FrameScaleLanczos.H" />
+    <ClInclude Include="inc\FrameScaleNN.H" />
+    <ClInclude Include="inc\FrameScaleNull.H" />
+    <ClInclude Include="inc\Global.H" />
+    <ClInclude Include="inc\IFunctions.H" />
+    <ClInclude Include="inc\ImgToBuf.H" />
+    <ClInclude Include="inc\ImgToBufBasic.H" />
+    <ClInclude Include="inc\ImgToBufEndian.H" />
+    <ClInclude Include="inc\Input.H" />
+    <ClInclude Include="inc\InputDPX.H" />
+    <ClInclude Include="inc\InputEXR.H" />
+    <ClInclude Include="inc\InputTIFF.H" />
+    <ClInclude Include="inc\InputY4M.H" />
+    <ClInclude Include="inc\InputYUV.H" />
+    <ClInclude Include="inc\IODPX.H" />
+    <ClInclude Include="inc\IOFunctions.H" />
+    <ClInclude Include="inc\IOTIFF.H" />
+    <ClInclude Include="inc\IOVideo.H" />
+    <ClInclude Include="inc\LookUpTable.H" />
+    <ClInclude Include="inc\OpenEXR.H" />
+    <ClInclude Include="inc\Output.H" />
+    <ClInclude Include="inc\OutputAVI.H" />
+    <ClInclude Include="inc\OutputEXR.H" />
+    <ClInclude Include="inc\OutputTIFF.H" />
+    <ClInclude Include="inc\OutputY4M.H" />
+    <ClInclude Include="inc\OutputYUV.H" />
+    <ClInclude Include="inc\Parameters.H" />
+    <ClInclude Include="inc\PUEncode.H" />
+    <ClInclude Include="inc\ResizeBiCubic.H" />
+    <ClInclude Include="inc\ScaleFilter.H" />
+    <ClInclude Include="inc\ToneMapping.H" />
+    <ClInclude Include="inc\ToneMappingBT2390.H" />
+    <ClInclude Include="inc\ToneMappingBT2390IPT.H" />
+    <ClInclude Include="inc\ToneMappingCIE1931.H" />
+    <ClInclude Include="inc\ToneMappingCIE1976.H" />
+    <ClInclude Include="inc\ToneMappingNull.H" />
+    <ClInclude Include="inc\ToneMappingRoll.H" />
+    <ClInclude Include="inc\TransferFunction.H" />
+    <ClInclude Include="inc\TransferFunctionAMPQ.H" />
+    <ClInclude Include="inc\TransferFunctionAPH.H" />
+    <ClInclude Include="inc\TransferFunctionAPQ.H" />
+    <ClInclude Include="inc\TransferFunctionAPQScaled.H" />
+    <ClInclude Include="inc\TransferFunctionAsRGB.H" />
+    <ClInclude Include="inc\TransferFunctionBiasedMPQ.H" />
+    <ClInclude Include="inc\TransferFunctionBT709.H" />
+    <ClInclude Include="inc\TransferFunctionCineonLog.H" />
+    <ClInclude Include="inc\TransferFunctionDPXLog.H" />
+    <ClInclude Include="inc\TransferFunctionHGold.H" />
+    <ClInclude Include="inc\TransferFunctionHLG.H" />
+    <ClInclude Include="inc\TransferFunctionHPQ.H" />
+    <ClInclude Include="inc\TransferFunctionHPQ2.H" />
+    <ClInclude Include="inc\TransferFunctionMPQ.H" />
+    <ClInclude Include="inc\TransferFunctionNormalize.H" />
+    <ClInclude Include="inc\TransferFunctionNull.H" />
+    <ClInclude Include="inc\TransferFunctionOHG.H" />
+    <ClInclude Include="inc\TransferFunctionPH.H" />
+    <ClInclude Include="inc\TransferFunctionPower.H" />
+    <ClInclude Include="inc\TransferFunctionPQ.H" />
+    <ClInclude Include="inc\TransferFunctionPQLB.H" />
+    <ClInclude Include="inc\TransferFunctionSRGB.H" />
+    <ClInclude Include="inc\TransferFunctionST240.H" />
+    <ClInclude Include="inc\TypeDefs.H" />
+    <ClInclude Include="inc\Win32.H" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

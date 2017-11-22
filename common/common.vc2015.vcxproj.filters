@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f4885297-d56a-436c-b752-c2b022c23702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{17359031-a2bf-4467-93c0-27411fe0ccae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AddNoise.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AddNoiseNormal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AddNoiseNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnalyzeGamut.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufToImg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufToImgBasic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufToImgEndian.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransform.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformCL.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformClosedLoop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformClosedLoopCr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformClosedLoopFRGB.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformClosedLoopRGB.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformClosedLoopY.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformFVDO.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformGeneric.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformRGBAdjust.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformXYZ2YUpVp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjust.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjust2ndOrder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjustAlt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjustFast.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjustFull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjustHLG.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjustLFast.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjustTele.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYAdjustXYZ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYLin.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYSumLin.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv420to422Generic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv420to444Adaptive.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv420to444CrBounds.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv420to444Generic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv420to444NN.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv422to420Generic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv422to444Generic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv422to444NN.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to420Adaptive.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to420BI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to420CrBounds.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to420CrEdge.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to420CrFBounds.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to420Generic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to420NN.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to422Generic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to422GenericOld.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conv444to422NN.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConvertBitDepth.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConvertColorFormat.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConvertColorFormatNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConvertNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConvFixedToFloat.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConvFloatToFixed.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DisplayGammaAdjust.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DisplayGammaAdjustHLG.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DisplayGammaAdjustNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetric.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricBlockAct.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricBlockinessJ341.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricDeltaE.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricmPSNR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricmPSNRfast.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricMSSSIM.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricPSNR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricRegionPSNR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricRegionTFPSNR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricSigmaCompare.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricSSIM.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricTFMSSSIM.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricTFPSNR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricTFSSIM.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricVIF.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionMetricVQM.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DistortionTransferFunction.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Eigenvalue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FFT.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Filter1D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameFilter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameFilter2DSep.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameFilterDeblock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameFilterNLMeans.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameFilterNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameFilterWiener2D.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameFilterWiener2DDark.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameScale.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameScaleHalf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameScaleLanczos.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameScaleNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImgToBuf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImgToBufBasic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImgToBufEndian.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputDPX.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputEXR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputTIFF.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputY4M.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputYUV.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IOFunctions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LookUpTable.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Output.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OutputAVI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OutputEXR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OutputTIFF.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OutputY4M.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OutputYUV.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Parameters.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResizeBiCubic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScaleFilter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToneMapping.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToneMappingBT2390.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToneMappingCIE1931.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToneMappingCIE1976.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToneMappingNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToneMappingRoll.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunction.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionAMPQ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionAPH.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionAPQ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionAPQScaled.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionAsRGB.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionBiasedMPQ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionHGold.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionHLG.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionHPQ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionHPQ2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionMPQ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionNormalize.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionNull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionOHG.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionPH.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionPower.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionPQ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionPQLB.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionSRGB.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionST240.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionDPXLog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionCineonLog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferFunctionBT709.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToneMappingBT2390IPT.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYPlus.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYMul.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYLuma.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorTransformYInter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameScaleNN.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameScaleBilinear.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameScaleBiCubic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\AddNoise.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\AddNoiseNormal.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\AddNoiseNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\AnalyzeGamut.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\AVILib.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\BufToImg.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\BufToImgBasic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\BufToImgEndian.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorSpaceMatrix.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransform.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformCL.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformClosedLoop.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformClosedLoopCr.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformClosedLoopFRGB.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformClosedLoopRGB.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformClosedLoopY.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformFVDO.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformGeneric.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformRGBAdjust.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformXYZ2YUpVp.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjust.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjust2ndOrder.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjustAlt.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjustFast.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjustFull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjustHLG.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjustLFast.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjustTele.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYAdjustXYZ.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYLin.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYSumLin.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv420to422Generic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv420to444Adaptive.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv420to444CrBounds.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv420to444Generic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv420to444NN.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv422to420Generic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv422to444Generic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv422to444NN.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to420Adaptive.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to420BI.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to420CrBounds.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to420CrEdge.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to420CrFBounds.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to420Generic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to420NN.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to422Generic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to422GenericOld.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conv444to422NN.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Convert.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ConvertBitDepth.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ConvertColorFormat.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ConvertColorFormatNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ConvertNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ConvFixedToFloat.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ConvFloatToFixed.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Defines.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DisplayGammaAdjust.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DisplayGammaAdjustHLG.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DisplayGammaAdjustNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetric.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricBlockAct.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricBlockinessJ341.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricDeltaE.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricmPSNR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricmPSNRfast.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricMSSSIM.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricPSNR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricRegionPSNR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricRegionTFPSNR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricSigmaCompare.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricSSIM.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricTFMSSSIM.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricTFPSNR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricTFSSIM.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricVIF.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionMetricVQM.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DistortionTransferFunction.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Eigenvalue.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FFT.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Filter1D.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Frame.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFilter.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFilter2DSep.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFilterDeblock.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFilterNLMeans.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFilterNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFilterWiener2D.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFilterWiener2DDark.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameFormat.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameScale.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameScaleHalf.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameScaleLanczos.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameScaleNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Global.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IFunctions.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ImgToBuf.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ImgToBufBasic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ImgToBufEndian.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Input.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InputDPX.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InputEXR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InputTIFF.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InputY4M.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InputYUV.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IODPX.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IOFunctions.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IOTIFF.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IOVideo.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\LookUpTable.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\OpenEXR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Output.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\OutputAVI.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\OutputEXR.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\OutputTIFF.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\OutputY4M.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\OutputYUV.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Parameters.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PUEncode.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ResizeBiCubic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ScaleFilter.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ToneMapping.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ToneMappingBT2390.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ToneMappingCIE1931.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ToneMappingCIE1976.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ToneMappingNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ToneMappingRoll.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunction.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionAMPQ.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionAPH.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionAPQ.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionAPQScaled.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionAsRGB.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionBiasedMPQ.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionHGold.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionHLG.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionHPQ.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionHPQ2.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionMPQ.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionNormalize.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionNull.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionOHG.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionPH.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionPower.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionPQ.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionPQLB.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionSRGB.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TypeDefs.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Win32.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYInter.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYLuma.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYMultiply.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ColorTransformYPlus.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ToneMappingBT2390IPT.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionBT709.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionCineonLog.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionDPXLog.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferFunctionST240.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameScaleBiCubic.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameScaleBilinear.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FrameScaleNN.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\HDRMetrics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HDRMetricsFrame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProjectParameters.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\HDRMetrics.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\HDRMetricsFrame.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ProjectParameters.H">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{5bf08c9b-818e-47bb-a970-ec880cd0fa12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{17efe60b-fc55-451b-b5a3-f49754b39e95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,209 @@
+Changes in HDRTools Version 0.16 (since 0.15)
+--------------------------------------------
+- Various bugs and fixes (AT)
+- Added additional scaling modes including bilinear, bicubic, NN
+  as well as improvements to the Lanczos one (AT)
+- Support of the modified luma adjustment methods presented in
+  JCTVC-AA0039 (AT)
+- Support of additional transfer functions for SDR material
+- Some extensions for dpx file support
+
+Changes in HDRTools Version 0.15 (since 0.14)
+---------------------------------------------
+- Extensions to the GamutTest tool (Histogram based statistics) (AT)
+- Addition of JCTVC_CTC config files (AT)
+- Updates to VS projects. Creation of VS2015 project. (AT)
+
+Changes in HDRTools Version 0.14 (since 0.13)
+---------------------------------------------
+- Added support for non-linearly encoded EXR video data (AT)
+- Added support for generalized scaling using Lanczos filters (AT)
+- Added display mapping modules based on ITU-R BT.2390 (AT, TB)
+- Added support for the sRGB transfer function
+- Extended the power law transfer function to now support controllable dark level and peak brightness parameters.(AT)
+- fixed I/O bugs relating to RGB raw input files (AT)
+- Fixed bugs in some distortion metrics supported, such as regional PSNR and xPSNR.(AT)
+- Added option to forcibly clip the input data based on the representation range (JZ, AS, AT)
+- Inclusion of the GamutTest tool for color gamut analysis (AT)
+- Support of a single input source in the HDRMontage tool (CR)
+- Fixed several other bugs and performed cleanups in the software, mostly related to I/O issues. (AR)
+
+Changes in HDRTools Version 0.13 (since 0.12)
+---------------------------------------------
+- SDR content colour conversion 
+- Scaling fixes (only 2x downscaling supported) (AT)
+- Support of 422 to 444 conversion (AT)
+- Support of the SSIM metric (AT)
+- Support of cross-component PSNR computation (AT)
+
+Changes in HDRTools Version 0.12 (since 0.11)
+---------------------------------------------
+- LUT support also for the TF derivatives in JCTVC-W0107 (AN, AT)
+- Generalized LUT support
+- Clipping bug fixes (AT)
+- Configuration file updates (PH, AT)
+
+Changes in HDRTools Version 0.11 (since 0.10)
+---------------------------------------------
+- Additional luma adjustment methods - JCTVC-W0052 (AT)
+- Addition of Canon's JCTVC-W0056 luma adjustment method (VK, AT)
+- Addition of Netflix's JCTVC-W0107 luma adjustment method (AN, AT)
+- LUT support for Transfer Functions (both for conversions and metrics) (AT)
+- Implementation of Adaptive downsampling - JCTVC-W0051 (AT)
+- Implementation of Adaptive upsampling - JCTVC-W0051 (AT)
+- VIF support (HRZ, MA, MTP, PN, AT)
+- VQM support (SS, KP, AT)
+- limited DPX file input support (AT)
+- extended AVI support (AT)
+- Support of HLG (MN, MP, AT)
+- ICtCp support (AT)
+- Various bug fixes, optimizations, and code improvements (AT)
+- Memory restructuring (AT)
+
+Changes in HDRTools Version 0.10 (since 0.9)
+---------------------------------------------
+- Additional (adaptive) Transfer Functions (AT)
+- Additional downsampling and upsampling filters (AT)
+- Post deblocking (AT)
+- Denoising (Wiener and separable) (AT)
+- I/O improvements (AT)
+- Various bug fixes relating to dynamic range and other issues (AT)
+- Closed loop conversion (AT)n
+- MinMax filtering (AT)
+- Chroma limit aware clipping (AT)
+- Constant Luminance Support (AT)
+- Distortion Computation improvements
+- Integration of Ericsson's Luma "micrograding" (iterative closed loop conversion)
+  process. Two different versions were implemented that utilize two different 
+  initial positions. Both result in similar performance but have different complexity.
+  Scheme could be vastly improved in terms of speed, especially using LUTs for TF
+  computation. (JS, JSS, AT)
+ 
+Changes in HDRTools Version 0.9 (since 0.8)
+-------------------------------------------
+- First version of HDRMontage tool; Support  for both “copy” and “butterfly” modes (AT)
+- tPSNR computation buf fixes and enhancements
+  o Color component bug fixes and improved control (AT)
+  o tPSNR YCbCr computation correction (AT, TL)
+  o Combined TF (PQ + PH) support (AT)
+  o Yu'v' support (AT, RB)      
+- SDI/SDI scaled input support (AT, TL, PY)
+- Adaptive PQ transfer function fixes (AT, JRS)
+- AVI output support ( 4:2:0 YUV 8 bit, Various 4:2:2 8 bit formats, V210,  and RGB 8 bit outputs) (AT)
+- V210 output support for both YUV and AVI (AT)
+- Rounding output support for OpenEXR (AT, JS)
+- RAW YUV fixed bit-depth format conversion extensions (AT)
+- 420 to 422 conversion, with interlace support (AT)
+- Add group write permissions (CC)
+- Windows Static Compilation (CA)
+- Memory leak bug fixes (AT, TL)
+- Max DeltaE support; Optional selection of White Point in DeltaE computation (AT)
+- Various bug fixes/cleanups (AT)
+
+Changes in HDRTools Version 0.8 (since 0.7)
+-------------------------------------------
+- TIFF support fixes; Support for TIFF output (AT)
+- Initial implementation of MS-SSIM (AT)
+- Additional transfer function support
+    - Power Law Gamma (AT)
+    - Adaptive PQ (AT)
+    - BBC Hybrid (MN) 
+- FastVDO Color space transforms and Chroma down/up-sampling filters (DL, MK)
+- Color Space Transform extensions (AT). 
+  More color spaces and direct conversion from different color spaces with different primaries supported.
+  Multiple space color conversion also supported.
+  Code also includes initial Yu'v' support
+- Speedup improvements to mPSNR (JS/AT)
+- Symmetric mPSNR computation (AT)
+- Minor Speedups in deltaE computation (CC, AT)
+- Cropping support (AT)
+- Cropped sequence distortion measurement support (AT)
+- Various bug fixes and software management (cleanups, memory leaks, assignments/initializations, visual studio projects etc) (CC, CR, EF, AT) 
+- CfE configuration file addition (EF, CC, PY, TL, AT)
+- Support for multiple pixel ranges (standard/full/restricted/SDI)
+- Frame rate bug fixes (AT)
+
+
+Changes in HDRTools Version 0.7 (since 0.6)
+-------------------------------------------
+- first version of sigma compare (CF/AT)
+- revised implementation of mPSNR (both normal and fast versions) (JS/AT))
+- Transform domain PSNR module (AT)
+- ChromaConvert tool (AT)
+- multi-config file support (CR)
+- DeltaE computation extensions (CC)
+- Constant luminance input support (CF)
+- TM5 interpolation filters (CF)
+- Various code improvements and extensions (AT)
+
+Changes in HDRTools Version 0.6 (since 0.5)
+-------------------------------------------
+- Creation of a window based data copy function in the Frame class. (AT)
+- Addition of optional rectangular window based distortion computation. (AT)
+- Creation of actual Xcode projects (AT)
+- Conversion from RGB in one color space to another (AT)
+- Other "cosmetic" enhancements (AT)
+- Cleanups and enhancements to deltaE2K (CC)
+
+Changes in HDRTools Version 0.5 (since 0.4)
+-------------------------------------------
+- Addition of deltaE2K computation (CC/EF)
+- Addition of first version of mPSNR (JS/AT))
+- A module for noise addition (Normal distribution) (AT)
+- Visual Studio (2010) support (CC/EF/AT)
+- Full cleanup of the code for Visual Studio (zero warning target) (AT)
+- Other cosmetic enhancements and bug fixes (AT)
+
+Changes in HDRTools Version 0.4 (since 0.2)
+-------------------------------------------
+- Resolves 32bit compilation issue (AT/CR)
+- Addition of HDRMetrics with support for PSNR/MSE (AT)
+- Addition of missing scaling parameter for the TF normalization process in the configuration files (NormalizationScale) (AT)
+- Addition of a new parameter named InvertTransferFunction. This is required to be set to 1 if you would like to invert the transfer function you have applied (i.e. going from YUV to EXR). (AT)
+- TIFF input support (taken from the JM implementation of Mr. Larry Luther). Output is currently in progress. (AT)
+- Various other warning cleanups, bug fixes, and optimizations. (AT)
+- Support for both half and single precision floats in OpenEXR (AT)
+- Output OpenEXR support (AT)
+
+Changes in HDRTools Version 0.2 (since 0.1)
+-------------------------------------------
+- Alpha plane support (AT)
+- Support for single precision floating data OpenEXR files (uncompressed) (AT)
+- Redesigned output class (AT)
+- Various bug fixes and enhancements (AT)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+People:
+AT      Alexis Michael Tourapis 	(alexismt@ieee.org)
+
+AN      Andrey Norkin
+AS      Andrew Segall
+CA      Cheung Auyeung
+CC      Christophe Chevance
+CF      Chad Fogg
+CR      Chris Rosewarne
+DL      Daisy Liu
+EF      Edouard Francois
+HRZ     Hamid Reza Tohidypour 
+JRS     Joel Royals Sole
+JS      Jacob Ström	
+JSS     Jonatan Samuelsson
+JZ      Jane Zhao
+KP      Kulbhushan Pachauri
+MA      Maryam Azimi
+MK      Madhu Krishnan
+MN      Matteo Naccari
+MP      Manish Pindoria
+MTP     Mahsa T. Pourazad 
+PH      Per Hermansson
+PN      Panos Nasiopoulos
+PY      Peng Yin
+RB      Robert Brondijk
+SS      Sarvesh Sahota
+TB      Teun Baar
+TL      Taoran Lu
+VK      Vladimir Kolesnikov
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
